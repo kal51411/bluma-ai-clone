@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@layer theme {
+  :root {
+    --font-sans: "Inter", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: #09090b;
+  color: #f4f4f5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Glassmorphism effects extracted from Bluma's bundle */
+.floating-glass-card {
+  background: rgba(18, 18, 22, 0.75);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.floating-glass-card:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(24, 24, 29, 0.85);
+}
+
+.gradient-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+}
